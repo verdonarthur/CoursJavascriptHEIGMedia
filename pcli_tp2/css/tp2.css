@@ -1,0 +1,50 @@
+body {
+    color: #000;
+    background-color: #fff;
+}
+.questionnaire dt{
+    cursor: pointer;
+}
+dt {
+    padding: 5px 0;
+    font-weight: bold;
+}
+dd{
+    padding: 3px 3px 10px 3px;
+    background-color: #eee;
+}
+.highlight{
+    color: red;
+}
+.warning{
+    background-color: red;
+    color: white;
+}
+.externalLink{
+    color: orange;
+}
+label{
+    display: block;
+    font-weight: bold;
+}
+textarea{
+    width: 100%;
+    border: solid black 1px;
+    background-color: #eee;
+}
+a[href^="http"]{
+    color:orange;
+}
+dl:last-of-type dd:hover{
+    color:red;
+}
+dl:last-of-type dd{
+    color:black;
+}
+
+#notes p:hover{
+    color:red;
+}
+#notes p{
+    color:black;
+}

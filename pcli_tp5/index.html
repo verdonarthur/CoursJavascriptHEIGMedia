@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chat</title>
+    <script
+            src="https://code.jquery.com/jquery-3.2.1.min.js"
+            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+            crossorigin="anonymous"></script>
+    <script src="js/login.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+<h1>chat</h1>
+<div id="login">
+    <form onsubmit="$('#btnLogin').click();return false;" method="post">
+        <input id="nickname" type="text" name="nickname" placeholder="nickname">
+        <input type="button" value="login" id="btnLogin">
+        <label id="msg"></label>
+    </form>
+</div>
+<div id="chat">
+    <div id="info">
+        <ul id="users">
+            <li class="user"></li>
+        </ul>
+        <ul id="messages">
+            <li class="message"></li>
+        </ul>
+    </div>
+
+    <div>
+        <form method="post" onsubmit="return false;">
+            <input id="m" autocomplete="off"/>
+            <button id="send">Send</button>
+            <button id="logout">logout</button>
+        </form>
+    </div>
+</div>
+</body>
+</html>

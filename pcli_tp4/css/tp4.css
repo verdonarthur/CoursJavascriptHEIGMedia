@@ -1,0 +1,32 @@
+fieldset{
+    border: solid black 1px;    
+    text-align: left;
+    width: 500px;
+    padding: 5px  10px 10px 10px;   
+    margin: 5px;    
+}
+legend{
+    font-weight: bold;
+    border: solid black 1px;
+    background-color :#356A99;    
+    color : white;    
+    margin: 0 0 10px 0;
+    padding: 0 5px;
+}
+label{
+    display: block;
+    width: 250px;
+    float: left;
+    font-weight: bold;    
+}
+input, select{
+    margin-bottom: 5px;
+    width: 200px;
+    border: solid black 1px;
+    background-color : #eee;    
+    padding: 1px 5px;
+    color: black;
+}
+template{
+    display:none;
+}

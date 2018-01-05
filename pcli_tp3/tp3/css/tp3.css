@@ -1,0 +1,30 @@
+div.action{
+    text-align: center;
+    padding: 10px;
+}
+input{
+    letter-spacing: 0.3em;
+    font-size: 1.1em;
+}
+table{
+    width: 90%;
+    margin: 0 auto;
+    border-collapse: collapse;    
+}
+th{
+    text-align: center;
+    background-color: #eee;
+    border: solid black 1px;
+    letter-spacing: 0.3em;
+}
+td {
+    padding: 0 10px;
+    border: solid black 1px;
+}
+.color1{
+    background: lightgrey;
+    color:black;
+}
+.template{
+    display:none;
+}

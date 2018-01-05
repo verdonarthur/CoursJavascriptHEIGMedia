@@ -1,0 +1,11 @@
+php artisan make:console ChatServe --command=chat:serve
+
+zmq windows:
+
+http://windows.php.net/downloads/pecl/releases/zmq/1.1.2/
+
+zmq mac:
+
+http://www.andrew-kirkpatrick.com/2013/10/install-zeromq-on-mac-with-php-pecl-extension/
+sudo pear channel-discover pear.zero.mq
+sudo pecl install pear.zero.mq/zmq-beta
