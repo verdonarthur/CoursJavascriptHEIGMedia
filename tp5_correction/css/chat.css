@@ -1,0 +1,79 @@
+* {
+    font-family: verdana;
+}
+#container {
+    min-width: 35em;
+}
+h1 {
+    text-align: center;
+}
+#chat {
+    display: none;
+}
+#login, #chat {
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+}
+#login label, #login button, #login input {
+    display: block;
+    margin: 1em auto;
+}
+#msg {
+    width: 50vw;
+}
+#online, #messages {
+    padding: 0.4em 0.8em;
+    font-size: 0.8em;
+    border: solid black 1px;
+    height: 60vh;
+    overflow: auto;
+    text-align: left;
+    display: inline-block;
+    margin: 0 0 2em 0;
+}
+#messages {
+    width: calc(90vw - 22em);
+    max-width: calc(90vw - 22em);
+    min-width: 20em;
+}
+#online {
+    width: 14em;
+}
+#online h4 {
+    padding: 0;
+    margin: 0 0 1em 0;
+    text-align: center;
+}
+.usernameOnline {
+    font-style: italic;
+}
+.username {
+    display: inline-block;
+    font-weight: bold;
+    vertical-align: top;
+}
+.username:before {
+    content: '[';
+}
+.username:after {
+    content: ']';
+}
+.message {
+    display: inline-block;
+    word-wrap: break-word;
+    max-width: calc(90vw - 39em);
+}
+.warning {
+    display: none;
+    margin: 1em auto;
+    max-width: 45em;
+    background-color: #ffccff;
+    color: red;
+    padding: 0.1em 0.4em;
+    border: solid red 1px;
+    font-size: 0.9em;
+}
+.template {
+    display: none;
+}

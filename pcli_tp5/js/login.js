@@ -3,6 +3,9 @@ var WEB_SERVICE_USER = WEB_SERVICE + "user/";
 var WEB_SERVICE_MSG = WEB_SERVICE + "msg/";
 
 $.ajaxSetup({
+    data: {
+        idTab: new Date().getTime()
+    },
     xhrFields: {
         withCredentials: true
     }
@@ -30,7 +33,7 @@ $(function () {
         if ($("#nickname").val().match(/^[a-z]+$/i)) {
 
             // get webservice
-            $.getJSON(WEB_SERVICE_USER + "login", {user: $("#nickname").val()}, function (data) {
+            $.getJSON(WEB_SERVICE_USER + "login", { user: $("#nickname").val() }, function (data) {
                 if (data.status === "success") {
                     $("#login").toggle();
                     $("#chat").toggle();
@@ -44,7 +47,7 @@ $(function () {
                 }
             });
         } else {
-            $("#nickname").css({"background-color": "red"});
+            $("#nickname").css({ "background-color": "red" });
         }
     });
 
@@ -71,14 +74,13 @@ $(function () {
         });
     });
 
-
     // utils function //
 
     // send a message
     function sendMessage() {
         var msg = $("#m").val();
         $("#m").val("");
-        $.getJSON(WEB_SERVICE_MSG + "add", {"msg": msg}, function (data) {
+        $.getJSON(WEB_SERVICE_MSG + "add", { "msg": msg }, function (data) {
         });
     }
 
